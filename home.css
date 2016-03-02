@@ -1,0 +1,285 @@
+@charset "utf-8";
+@font-face {
+    font-family: EK2003Regular;
+    src: url(EK2003Regular.ttf);
+}
+/* CSS Document */
+    $width:24px;
+	$height:12px;
+	$transition: background-color 0.3s linear 0s;
+	html{
+		height: 100%;
+		font-size:100%;
+
+	}
+
+
+	body{
+		height: 100%;
+		font-size:4vmin;
+		font-family:arial;
+		margin: auto;
+		position: relative;
+        background-color:#112233 ;
+	}
+
+
+	img {
+    max-width: 100vh;
+    height: auto;
+    width: auto\9; /* ie8 */
+    position: relative;
+	}
+
+	.header{
+
+		background-color: #d35400;
+      	height:30vh;  
+   		margin: auto;
+   		position: relative;
+	}
+
+	.log-out{		
+		margin-right: 2.5vmin;
+		text-align: right;
+		font-size: 0.9em;
+		font-family:EK2003Regular;
+		position:relative;
+		color:  #d35400;
+		text-decoration: none;
+		position: relative;
+	}
+
+	.log-out:hover{
+		color:  #ff8636;
+		text-decoration: underline;
+	}
+
+	
+
+	#boss{
+		text-align: center;
+		font-size: 3.5vmin;
+		color: #d35400;
+		font-family:EK2003Regular; 
+
+	}
+
+	.welcome{
+		text-align: center;
+		font-size: 7vmin;
+		color: #d35400;
+		font-family:EK2003Regular; 
+
+	}
+
+	.display{
+
+
+		height:70vh; 
+		position: relative;
+
+
+	}
+
+	.cont{
+		margin-left: 30%;	
+
+	}
+
+	.off{
+		padding-left: 2%;
+		padding-top: 8%;
+		font-size: 2.5vmin;
+		color: #112233;
+		font-family:EK2003Regular; 
+		position:absolute;
+		z-index: +1;
+	}
+	
+	.on{
+		padding-left: 65%;
+		padding-top: 8%;
+		font-size:2.5vmin;
+		color: #112233;
+		font-family:EK2003Regular; 
+		position:absolute;
+		z-index: +1;
+	}
+
+
+	.toggle_1{
+		width:11vmin;
+		height: 4vmin;
+		display: block;
+		border: 0.5vmin solid 	#d35400;
+		border-radius :0.5vmin;
+		position:relative;
+	}
+	
+
+
+ 	.toggle_control_1:after{
+
+		content:"";
+		width:5.5vmin;
+		height:4vmin;
+		display:block;
+		background-color: #d35400;
+		border-radius:1px;
+		position:relative;
+		
+	}
+	
+	.toggle_input_1{
+		display:none;
+	}
+
+	.toggle_input_1:checked + .toggle_control_1:after{
+		background-color: #d35400;
+		left:6vmin;
+	}
+
+	table{
+	width: 40%;
+	height: 30%;
+	margin-right: auto;
+	margin-left: auto;
+	table-layout: fixed;
+	vertical-align: middle; 
+	position: relative;
+  	}
+
+
+	td{
+	height: 100%;
+	padding: auto;
+	font-size: 1em;
+	color: #d35400;
+	font-family:EK2003Regular;
+	vertical-align: middle; 
+
+
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+            <div class="container">
+
+    <div class="switch white">
+
+      <input type="radio" name="switch" id="switch-off">
+      <input type="radio" name="switch" id="switch-on" checked>
+
+      <label for="switch-off">Off</label>
+      <label for="switch-on">On</label>
+
+      <span class="toggle"></span>
+
+    </div> <!-- end switch -->
+
+  </div> <!-- end container -->
+
+
+
+.container {
+  height: 30px;
+    position: relative;
+  width: 70px;
+}
+
+.switch {
+  background: #d35400;
+  border-radius: 32px;
+  display: block;
+  height: 30px;
+  position: relative;
+  width: 70px;
+}
+
+.switch label {
+  color: #d35400;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+.switch label:nth-of-type(1) {
+  left: 45%;
+  position: absolute;
+  text-align: right;
+}
+
+.switch label:nth-of-type(2) {
+  position: absolute;
+  right: 58%;
+  text-align: left;
+}
+
+.switch input {
+  height: 30px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 70px;
+  z-index: 1;
+}
+
+.switch input:checked~label:nth-of-type(1) { color: #112233;}
+.switch input:checked~label:nth-of-type(2) { color: #d35400;}
+ 
+.switch input~:checked~label:nth-of-type(1) { color: #d35400;}
+.switch input~:checked~label:nth-of-type(2) { color: #112233;}
+
+.switch input:checked~.toggle {
+  left: 2px;
+}
+
+.switch input~:checked~.toggle {
+  left: 42px;
+}
+
+.switch input:checked {
+  z-index: 0;
+}
+
+.toggle {
+  background: #112233;
+  border-radius: 50%;
+  height: 26px;
+  left: 0px;
+  position: absolute;
+  top: 2px;
+  -webkit-transition: left .2s ease;
+  -moz-transition: left .2s ease;
+  -ms-transition: left .2s ease;
+  -o-transition: left .2s ease;
+  transition: left .2s ease;
+  width: 26px;
+  z-index: 1;
+}
+
+*/
