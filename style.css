@@ -76,31 +76,6 @@
 
 	}
 
-	/*.log-out{		
-		margin-right: 2.5vmin;
-		text-align: right;
-		font-size: 0.9em;
-		font-family:EK2003Regular;
-		position:relative;
-		color:  #d35400;
-		text-decoration: none;
-		position: relative;
-	}
-
-	.log-out1{		
-		font-size: 0.9em;
-		font-family:EK2003Regular;
-		position:relative;
-		color:  #d35400;
-		text-decoration: none;
-		position: relative;
-	}
-
-	.log-out1:hover{
-		color:  #ff8636;
-		text-decoration: underline;
-	}
-*/
 	.h2{
 		text-align: center;
 		font-size: 7vmin;
