@@ -31,7 +31,7 @@
 	.header{
 
 		background-color: #d35400;
-      	height:30vmin;  
+      	height:30%;  
    		margin: auto;
    		position: relative;
 	}
@@ -71,11 +71,36 @@
 
 	.display{
 
-		height:70vmin; 
+		height:60%; 
 		position: relative;
 
 	}
 
+	/*.log-out{		
+		margin-right: 2.5vmin;
+		text-align: right;
+		font-size: 0.9em;
+		font-family:EK2003Regular;
+		position:relative;
+		color:  #d35400;
+		text-decoration: none;
+		position: relative;
+	}
+
+	.log-out1{		
+		font-size: 0.9em;
+		font-family:EK2003Regular;
+		position:relative;
+		color:  #d35400;
+		text-decoration: none;
+		position: relative;
+	}
+
+	.log-out1:hover{
+		color:  #ff8636;
+		text-decoration: underline;
+	}
+*/
 	.h2{
 		text-align: center;
 		font-size: 7vmin;
@@ -165,6 +190,8 @@
 		font-family:EK2003Regular;
 		position:relative;
 		border-style: solid;
+		color: #112233;
+		cursor: pointer;
 	}
 
 	/*link*/
@@ -225,6 +252,7 @@
 		table-layout: fixed;
 		vertical-align: middle; 
 		position: relative;
+
   	}
 
 
@@ -255,8 +283,13 @@
 		-webkit-appearance: none;
     	-moz-appearance: none;
     	text-align: center;
+
 	}
 	
+
+
+
+
 	
 
 	select {
@@ -289,7 +322,7 @@
 	 	height: 0vmin;
 	 	z-index: 9;
 	 	cursor: pointer;
-	 	-webkit-transition: all 0.25s linear;
+	 	-webkit-transition: all 0.15s linear;
 	}
 
 	ul li:hover label{
@@ -306,8 +339,8 @@
 		top: 5vmin;
 		left: 3vmin;
 		z-index: 5;
-		transition: border .25s linear;
-		-webkit-transition: border .25s linear;
+		transition: border .15s linear;
+		-webkit-transition: border .15s linear;
 	}
 
 	ul li:hover .check {
@@ -324,8 +357,8 @@
 	 	top: 0.8vmin;
 		left: 0.75vmin;
 	 	margin: auto;
-		transition: background 0.25s linear;
-		-webkit-transition: background 0.25s linear;
+		transition: background 0.15s linear;
+		-webkit-transition: background 0.15s linear;
 	}
 
 	input[type=radio]:checked ~ .check {
@@ -340,14 +373,117 @@
 	 	color: #d35400;
 	}
 
+	.custom_file_upload {
+		margin-right: 14vmin;
 
-	.cura{
+	}
+
+	input.file { /* el7eta el beda*/
+		margin-top: 2vmin;
+		width: 35vmin;
+		height: 4.5vmin;
+		border: 1px solid #0f1e2c;
+		border-right: 0;
+		color: #d35400;
+		background-color: #0f1e2c;
+		font-size: 0.6em;
+		-webkit-border-top-left-radius: 0.5vmin;
+		-webkit-border-bottom-left-radius:  0.5vmin;
+		-moz-border-radius-topleft:  0.5vmin;
+		-moz-border-radius-bottomleft: 0.5vmin;
+		border-top-left-radius: 0.5vmin;
+		border-bottom-left-radius:  0.5vmin;
+		outline: none;
+	}
+
+	div.file_upload { /*el 7eta el zar2a*/
+		margin-top: 2.05vmin;
+		width: 13vmin;
+		height: 4.5vmin;
+		background: #d35400;
+		border-right: 0;
+		border: 1px solid #d35400;
+		display: inline;
+		position: absolute;
+		overflow: hidden;
+		cursor: pointer;
+		
+		-webkit-border-top-right-radius: 0.5vmin;
+		-webkit-border-bottom-right-radius: 0.5vmin;
+		-moz-border-radius-topright: 0.5vmin;
+		-moz-border-radius-bottomright: 0.5vmin;
+		border-top-right-radius: 0.5vmin;
+		border-bottom-right-radius: 0.5vmin;
+		color: #112233;
+		font-size: 0.8em;
 		text-align: center;
+	}
+	div.file_upload:before { /*el klam 3al 7eta elzar2a */
+		content: 'Browse..';
 		position: relative;
+		left: 0; right: 0;
+		text-align: center;
+		
+		cursor: pointer;
+	}
+
+	div.file_upload input {
+		position: relative;
+		width: 35vmin;
+		height: 4.5vmin;
+		display: inline;
+		cursor: pointer;
+		opacity: 0;
+	}
+
+	.buttons{
+
+		margin-top: 8vmin;
+
+
+	}
+
+
+
+	.img-music-button{
+
+		position:relative;
+		z-index: 1;
+		vertical-align: center;
+		max-width:12vmin;
+		height: 100%;
+		display: block;
+		border: 0.5vmin solid 	#0f1e2c;
+		border-radius :0.9vmin;
+		background-color: #0f1e2c;
+	
+
+
+
+
+
+	}
+
+	#button{
+		display: none;
+
+	}
+
+
+
+.td-buttons{
+	width: 12vmin;
+	height:100%;
+
+
+}
+
+	.footer {
+	  	text-align: center;
 		font-size: 0.5em;
 		font-family:EK2003Regular; 
 		color: #d35400;
 		vertical-align:bottom;
 		position: relative;
-		margin-top:30vmin;
+		padding-top: 20%;
 	}
