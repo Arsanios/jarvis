@@ -487,3 +487,17 @@
 		position: relative;
 		padding-top: 20%;
 	}
+
+
+textarea {
+
+		text-align: center;
+		background-color:#0f1e2c ;
+		font-family:EK2003Regular; 
+		color: #d35400;
+		border-color: #d35400; 
+		border-style: double;
+		border-radius :0.9vmin;
+
+
+}
